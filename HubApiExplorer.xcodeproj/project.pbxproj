@@ -58,13 +58,61 @@
 			children = (
 				AAB158D2239FF1C500F1778D /* AppDelegate.swift */,
 				AAB158D4239FF1C500F1778D /* SceneDelegate.swift */,
-				AAB158D6239FF1C500F1778D /* ViewController.swift */,
-				AAB158D8239FF1C500F1778D /* Main.storyboard */,
-				AAB158DB239FF1C700F1778D /* Assets.xcassets */,
-				AAB158DD239FF1C700F1778D /* LaunchScreen.storyboard */,
+				AAB158EB239FF30100F1778D /* View Controllers */,
+				AAB158EA239FF2FE00F1778D /* Views */,
+				AAB158E9239FF2FC00F1778D /* Model */,
+				AAB158E8239FF2F900F1778D /* Extenstions */,
+				AAB158E7239FF2EC00F1778D /* Services */,
+				AAB158E6239FF2E900F1778D /* Resources */,
 				AAB158E0239FF1C700F1778D /* Info.plist */,
 			);
 			path = HubApiExplorer;
+			sourceTree = "<group>";
+		};
+		AAB158E6239FF2E900F1778D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAB158DB239FF1C700F1778D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AAB158E7239FF2EC00F1778D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AAB158E8239FF2F900F1778D /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		AAB158E9239FF2FC00F1778D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AAB158EA239FF2FE00F1778D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAB158D8239FF1C500F1778D /* Main.storyboard */,
+				AAB158DD239FF1C700F1778D /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAB158EB239FF30100F1778D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAB158D6239FF1C500F1778D /* ViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
