@@ -18,6 +18,9 @@
 		AAB158F123A04EA400F1778D /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB158F023A04EA400F1778D /* Resource.swift */; };
 		AAB158F323A04EB400F1778D /* Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB158F223A04EB400F1778D /* Verification.swift */; };
 		AAB158F523A04EC500F1778D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB158F423A04EC500F1778D /* Person.swift */; };
+		AAB158F723A13B1100F1778D /* GithubApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB158F623A13B1100F1778D /* GithubApiService.swift */; };
+		AAB158FB23A13C6F00F1778D /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB158F823A13C6F00F1778D /* APIServiceProtocol.swift */; };
+		AAB158FC23A13C6F00F1778D /* TestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB158F923A13C6F00F1778D /* TestService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		AAB158F023A04EA400F1778D /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		AAB158F223A04EB400F1778D /* Verification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verification.swift; sourceTree = "<group>"; };
 		AAB158F423A04EC500F1778D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		AAB158F623A13B1100F1778D /* GithubApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubApiService.swift; sourceTree = "<group>"; };
+		AAB158F823A13C6F00F1778D /* APIServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		AAB158F923A13C6F00F1778D /* TestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,9 @@
 		AAB158E7239FF2EC00F1778D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AAB158F823A13C6F00F1778D /* APIServiceProtocol.swift */,
+				AAB158F623A13B1100F1778D /* GithubApiService.swift */,
+				AAB158F923A13C6F00F1778D /* TestService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -208,7 +217,10 @@
 				AAB158F323A04EB400F1778D /* Verification.swift in Sources */,
 				AAB158ED239FF3BC00F1778D /* LogFunc.swift in Sources */,
 				AAB158F523A04EC500F1778D /* Person.swift in Sources */,
+				AAB158F723A13B1100F1778D /* GithubApiService.swift in Sources */,
+				AAB158FB23A13C6F00F1778D /* APIServiceProtocol.swift in Sources */,
 				AAB158D5239FF1C500F1778D /* SceneDelegate.swift in Sources */,
+				AAB158FC23A13C6F00F1778D /* TestService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
