@@ -22,6 +22,9 @@
 		AAB158FB23A13C6F00F1778D /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB158F823A13C6F00F1778D /* APIServiceProtocol.swift */; };
 		AAB158FC23A13C6F00F1778D /* TestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB158F923A13C6F00F1778D /* TestService.swift */; };
 		AAB158FF23A1B56200F1778D /* CommitsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB158FE23A1B56200F1778D /* CommitsTableController.swift */; };
+		AACB673223A1F46A00A99EC0 /* CommitNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB673123A1F46A00A99EC0 /* CommitNode.swift */; };
+		AACB673423A1F48300A99EC0 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB673323A1F48300A99EC0 /* Repo.swift */; };
+		AACB673623A1F5C200A99EC0 /* PersonProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB673523A1F5C200A99EC0 /* PersonProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		AAB158F823A13C6F00F1778D /* APIServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
 		AAB158F923A13C6F00F1778D /* TestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestService.swift; sourceTree = "<group>"; };
 		AAB158FE23A1B56200F1778D /* CommitsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsTableController.swift; sourceTree = "<group>"; };
+		AACB673123A1F46A00A99EC0 /* CommitNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitNode.swift; sourceTree = "<group>"; };
+		AACB673323A1F48300A99EC0 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		AACB673523A1F5C200A99EC0 /* PersonProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +122,13 @@
 		AAB158E9239FF2FC00F1778D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AACB673323A1F48300A99EC0 /* Repo.swift */,
+				AACB673123A1F46A00A99EC0 /* CommitNode.swift */,
 				AAB158EE23A0455A00F1778D /* Commit.swift */,
 				AAB158F023A04EA400F1778D /* Resource.swift */,
 				AAB158F223A04EB400F1778D /* Verification.swift */,
 				AAB158F423A04EC500F1778D /* Person.swift */,
+				AACB673523A1F5C200A99EC0 /* PersonProfile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,10 +224,13 @@
 			files = (
 				AAB158EF23A0455A00F1778D /* Commit.swift in Sources */,
 				AAB158D7239FF1C500F1778D /* CommitsViewController.swift in Sources */,
+				AACB673623A1F5C200A99EC0 /* PersonProfile.swift in Sources */,
 				AAB158D3239FF1C500F1778D /* AppDelegate.swift in Sources */,
 				AAB158F123A04EA400F1778D /* Resource.swift in Sources */,
 				AAB158F323A04EB400F1778D /* Verification.swift in Sources */,
 				AAB158ED239FF3BC00F1778D /* LogFunc.swift in Sources */,
+				AACB673223A1F46A00A99EC0 /* CommitNode.swift in Sources */,
+				AACB673423A1F48300A99EC0 /* Repo.swift in Sources */,
 				AAB158F523A04EC500F1778D /* Person.swift in Sources */,
 				AAB158F723A13B1100F1778D /* GithubApiService.swift in Sources */,
 				AAB158FB23A13C6F00F1778D /* APIServiceProtocol.swift in Sources */,

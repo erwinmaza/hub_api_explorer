@@ -6,5 +6,6 @@ import Foundation
 
 struct Resource: Codable {
 	let url: String
+	let html_url: String?
 	let sha: String
 }

@@ -6,7 +6,7 @@ import Foundation
 
 protocol ApiServiceProtocol {
 
-	func fetchLatestCommitsFromRepo(_ repo: Repo, completion: @escaping ([Commit], Error?) -> Void)
+	func fetchLatestCommitsFromRepo(_ repo: Repo, completion: @escaping ([CommitNode], Error?) -> Void)
 
 }
 

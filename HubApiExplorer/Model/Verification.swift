@@ -7,8 +7,8 @@ import Foundation
 struct Verification: Codable {
 	let verified: Bool
 	let reason: String
-	let signature: String
-	let payload: String
+	let signature: String?
+	let payload: String?
 
 	var verificationReason: Reason {
 		return Reason(rawValue: reason) ?? .unsigned // TODO: verify this is a reasonable default

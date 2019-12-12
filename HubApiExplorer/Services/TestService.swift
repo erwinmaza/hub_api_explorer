@@ -9,7 +9,7 @@ struct TestService: ApiServiceProtocol {
 	// TODO: create test server
 	let apiUrlString = "probably something on AWS"
 
-	func fetchLatestCommitsFromRepo(_ repo: Repo, completion: @escaping ([Commit], Error?) -> Void) {
+	func fetchLatestCommitsFromRepo(_ repo: Repo, completion: @escaping ([CommitNode], Error?) -> Void) {
 		LogFunc()
 		// TODO: this
 	}

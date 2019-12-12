@@ -9,10 +9,10 @@ struct GithubApiService: ApiServiceProtocol {
 
 	let apiUrlString = "https://api.github.com"
 
-	func fetchLatestCommitsFromRepo(_ repo: Repo, completion: @escaping ([Commit], Error?) -> Void) {
+	func fetchLatestCommitsFromRepo(_ repo: Repo, completion: @escaping ([CommitNode], Error?) -> Void) {
 		LogFunc()
 
-		let commitsEndpoint = "/repos/\(repo.ownerName)/\(repo.repoName)/git/commits"
+		let commitsEndpoint = "/repos/\(repo.ownerName)/\(repo.repoName)/commits"
 
 		guard let url = URL(string: apiUrlString + commitsEndpoint) else {
 			fatalError("Could not construct URL for repo '\(repo)'")
@@ -20,9 +20,12 @@ struct GithubApiService: ApiServiceProtocol {
 
 		LogFunc(url.absoluteString)
 
-		URLSession.shared.dataTask(with: url, completionHandler: {(data, response, error) -> Void in
+		var request = URLRequest(url: url)
+		request.addValue("Bearer 7ad9f93f889f1a95d6f88f979fa5d1ddfefa34cb", forHTTPHeaderField: "Authorization")
 
-			// ignore error for now
+		URLSession.shared.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
+
+			// ignore errors for now
 
 			guard let data = data else {
 				let apiError = APIError.response(message: response.debugDescription)
@@ -32,7 +35,7 @@ struct GithubApiService: ApiServiceProtocol {
 
 			do {
 				let commitNodes = try JSONDecoder().decode([CommitNode].self, from: data)
-				completion(commitNodes.map({ $0.commit }), nil)
+				completion(commitNodes, nil)
 			} catch {
 				LogError(GenericLoggableError(error.localizedDescription))
 				let apiError = APIError.json(message: error.localizedDescription)
