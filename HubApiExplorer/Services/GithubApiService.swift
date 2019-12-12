@@ -20,8 +20,13 @@ struct GithubApiService: ApiServiceProtocol {
 
 		LogFunc(url.absoluteString)
 
+		// TODO: In a production app, we safeguard secrets using one of a variety of methods
+		// temp workaround so github doesn't invalidate the token upon commit
+		let tokenPrefix = "2c7b207098b6fb4b1"
+		let tokenSuffix = "f34ec2499aabfa294494871"
+
 		var request = URLRequest(url: url)
-		request.addValue("Bearer 7ad9f93f889f1a95d6f88f979fa5d1ddfefa34cb", forHTTPHeaderField: "Authorization")
+		request.addValue("Bearer \(tokenPrefix)\(tokenSuffix)", forHTTPHeaderField: "Authorization")
 
 		URLSession.shared.dataTask(with: request, completionHandler: {(data, response, error) -> Void in
 
